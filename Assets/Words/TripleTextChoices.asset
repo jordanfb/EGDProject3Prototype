@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a62c319545246224b9febbf310acf03c, type: 3}
+  m_Name: TripleTextChoices
+  m_EditorClassIdentifier: 
+  words:
+  - baseWord: Romans
+    twistWord1: Spartans
+    twistWord2: Trojans
+  - baseWord: Mount Doom
+    twistWord1: Mount Edna
+    twistWord2: Mount Vesuvius
+  - baseWord: Strudel
+    twistWord1: Croissant
+    twistWord2: Cobbler
+  - baseWord: Magenta
+    twistWord1: Purple
+    twistWord2: Pink
+  - baseWord: Daffodil
+    twistWord1: Daisy
+    twistWord2: Sunflower
+  - baseWord: Broom
+    twistWord1: Mop
+    twistWord2: Brush
+  - baseWord: Harry Potter
+    twistWord1: Lord of the Rings
+    twistWord2: Doctor Who
+  - baseWord: Ice Cream
+    twistWord1: Gelato
+    twistWord2: Sorbet
+  - baseWord: Alicorn
+    twistWord1: Unicorn
+    twistWord2: Pegasus
+  - baseWord: Space Station
+    twistWord1: Space Ship
+    twistWord2: Escape Pod
