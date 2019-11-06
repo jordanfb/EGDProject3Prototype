@@ -55,6 +55,8 @@ public class Train : TrainBehavior
             networkObject.Responder = _responder; // they set the responder!
             networkObject.Moving = true;
         }
+
+        carGraphics.gameObject.SetActive(false);
     }
 
     public override void StopTrain(RpcArgs args)
