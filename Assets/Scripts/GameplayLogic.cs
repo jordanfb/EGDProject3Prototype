@@ -125,11 +125,22 @@ public class GameplayLogic : GameplayLogicBehavior
 
     public string GetPlayerName(int playerID)
     {
-        if (playerID < 0 || playerID >= currentPlayers.Count)
+        string personName = "Error";
+        // find the person's name!
+        for (int j = 0; j < players.Count; j++)
         {
-            return "ERROR";
+            if (players[j].id == playerID)
+            {
+                personName = players[j].playername;
+                break;
+            }
         }
-        return currentPlayers[playerID].Name;
+        return personName;
+        //if (playerID < 0 || playerID >= currentPlayers.Count)
+        //{
+        //    return "ERROR";
+        //}
+        //return currentPlayers[playerID].Name;
     }
 
     public void SpawnNewTrain(int destination)
