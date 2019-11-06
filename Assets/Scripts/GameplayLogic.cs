@@ -414,13 +414,19 @@ public class GameplayLogic : GameplayLogicBehavior
 
     private void OnAbleToKeepUnfinishedTrainsChanged(bool value, ulong timestep)
     {
-        keepUnfinishedTrainButton.SetActive(value);
+        MainThreadManager.Run(() =>
+        {
+            keepUnfinishedTrainButton.SetActive(value);
+        });
     }
 
     private void OnHijackerHasToAnswerChanged(bool value, ulong timestep)
     {
-        // disable the button not to answer if you have to answer!
-        dontAnswerTrainButton.SetActive(!value);
+        MainThreadManager.Run(() =>
+        {
+            // disable the button not to answer if you have to answer!
+            dontAnswerTrainButton.SetActive(!value);
+        });
     }
 
     protected override void NetworkStart()
